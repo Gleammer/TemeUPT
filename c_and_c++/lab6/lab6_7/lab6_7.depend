@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1572480362 source:/home/gleamm/Documents/teme/lab6/lab6_7/main.c
+	<stdlib.h>
+	<stdio.h>
+	<stdbool.h>
+

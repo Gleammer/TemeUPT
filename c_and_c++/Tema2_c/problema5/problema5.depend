@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1572383019 source:/home/gleamm/Documents/teme/Tema2_c/problema5/main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+

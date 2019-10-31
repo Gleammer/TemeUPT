@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1570998985 source:/home/gleamm/Desktop/c and c++/lab3_11/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

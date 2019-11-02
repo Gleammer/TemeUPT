@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void create_y(int x){
-    int i,k=0,y=0;
+void create_y(unsigned int x){
+    unsigned int y=0;
+    int i,k=0;
 
     for(i=sizeof(x)*8-1;i>=0;i--){
         if((x>>i)&1){
@@ -18,8 +19,8 @@ void create_y(int x){
 }
 
 int main(){
-    int v[100],
-        i,n;
+    unsigned int v[100];
+    int i,n;
 
     printf("n = ");
     scanf("%d", &n);
@@ -28,7 +29,7 @@ int main(){
     } else {
         for(i=0;i<n;i++){
             printf("v[%d]=", i);
-            scanf("%d", &v[i]);
+            scanf("%u", &v[i]);
         }
         for(i=0;i<n;i++){
             create_y(v[i]);

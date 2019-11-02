@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void changer(int x, int y){
+void changer(unsigned int x, unsigned int y){
     int i,j,k=0;
 
     for(i=sizeof(x)*8-1;i>=0;i--){
@@ -24,8 +24,8 @@ void changer(int x, int y){
 }
 
 int main(){
-    int v[20],
-        i,n;
+    unsigned int v[20];
+    int i,n;
 
     printf("n = ");
     scanf("%d", &n);
@@ -35,7 +35,7 @@ int main(){
     } else {
         for(i=0;i<n;i++){
             printf("v[%d]=", i);
-            scanf("%d", &v[i]);
+            scanf("%u", &v[i]);
         }
         for(i=0;i<n;i+=2){
             changer(v[i],v[i+1]);

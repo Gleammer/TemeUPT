@@ -7,10 +7,11 @@
 
 int main(){
     unsigned v[20];
-    int i,j,n;
+    int i,j,n, *n1;
 
+    n1=&n;
     printf("n = ");
-    scanf("%d",&n);
+    scanf("%d",n1);
     for(i=0;i<n;i++){
         printf("v[%d] = ", i);
         scanf("%u", v+i);

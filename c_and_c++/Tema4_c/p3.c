@@ -7,11 +7,11 @@
 
 int main(){
     int v[200],v1[200],v2[200],v3[200],
-        i,n, *p1, *p2, *p3;
+        i,n, *n1, *p1, *p2, *p3;
 
-    p1=v1;p2=v2;p3=v3;
+    n1=&n;p1=v1;p2=v2;p3=v3;
     printf("n = ");
-    scanf("%d", &n);
+    scanf("%d", n1);
     for(i=0;i<n;i++){
         printf("v[%d] = ", i);
         scanf("%d", v+i);
@@ -25,7 +25,7 @@ int main(){
             p2++;
         }
     }
-    i=j=0;
+    i=0;
     while(i<p1-v1 || i<p2-v2){
         if(i<p1-v1){
             *p3=*(v1+i);

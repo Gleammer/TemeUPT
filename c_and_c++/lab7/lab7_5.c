@@ -3,31 +3,19 @@
 //
 
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(){
-    int v[100],
-        *p,i,j,x;
+    int v[]={7, -5, 4, 3, -9, -2, -8, 42},
+            min,i;
+    size_t n = sizeof(v)/ sizeof(*v);
 
-    p=v;
-    for(;;){
-        printf("x = ");
-        scanf("%d", &x);
-        if(x==0){
-            break;
+    min=*v;
+    for(i=1;i<n;i++){
+        if(*(v+i)<min){
+            min=*(v+i);
         }
-        i=0;
-        while(*(v+i)<x && v+i<p){
-            i++;
-        }
-        for(j=p-v;j>i;j--){
-            *(v+j)=*(v+j-1);
-        }
-        *(v+i)=x;
-        p++;
-        for(i=0;i<p-v;i++){
-            printf("%d ", *(v+i));
-        }
-        printf("\n");
     }
+    printf("%d\n", min);
     return 0;
 }

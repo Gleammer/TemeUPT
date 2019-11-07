@@ -8,6 +8,6 @@ let getsum a b c =
     end else getsum1 a b c (d+1) s
   in getsum1 a b c a 0
  
-let rez = getsum 1 10 3
+let rez = getsum 1 10 2
 
 ;;

@@ -24,7 +24,7 @@ int main(){
             for(j=n;j>i;j--){
                 *(v+j)=*(v+j-1);
             }
-            *(v+i+1)=max(*(v+i+1),*(v+i+2));
+            *(v+i+1)=max(fabs(*(v+i+1)),fabs(*(v+i+2)));
             n++;
             i++;
         }

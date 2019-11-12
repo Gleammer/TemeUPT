@@ -20,7 +20,7 @@ int main(){
         scanf("%f", v+i);
     }
     for(i=0;i<n-1;i++){
-        if(fabs(*(v+i)-(*(v+i+1)))<10){
+        if(*(v+i)-(*(v+i+1))<10){
             for(j=n;j>i;j--){
                 *(v+j)=*(v+j-1);
             }

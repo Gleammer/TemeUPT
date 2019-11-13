@@ -28,6 +28,7 @@ int main(){
             for(j=0;j<m;j++){
                 if(*(a+i) == *(b+j)){
                     k++;
+                    break;
                 }
             }
         }

@@ -23,7 +23,7 @@ int main(){
     }
     i=0;j=0;
     while(i<n || j<m){
-        if(*(a+i)<*(b+j) && i<n){
+        if((*(a+i)<*(b+j) && i<n ) || j==m){
             *p=*(a+i);
             i++;
         } else {
@@ -37,21 +37,3 @@ int main(){
     }
     return 0;
 }
-//for(;;){
-//        printf("x = ");
-//        scanf("%d", &x);
-//        if(x==0){
-//            break;
-//        }
-//        i=0;
-//        while(*(v+i)<x && v+i<p){
-//            i++;
-//        }
-//        for(j=p-v;j>i;j--){
-//            *(v+j)=*(v+j-1);
-//        }
-//        *(v+i)=x;
-//        p++;
-//        for(i=0;i<p-v;i++){
-//            printf("%d ", *(v+i));
-//        }

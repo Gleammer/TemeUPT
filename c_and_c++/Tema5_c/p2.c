@@ -34,7 +34,7 @@ int main(){
         for(i=0;i<m;i++){
             ge*=*(p+i*20+j);
         }
-        ge=sqrt(ge);
+        ge=pow(ge,1/(double)m);
         printf("Media geometrica pe coloana %d este = %.2f\n", j+1, ge);
     }
     return 0;

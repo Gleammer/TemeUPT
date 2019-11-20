@@ -8,7 +8,7 @@
 unsigned schimb(unsigned x, int a, int b){
     int i;
     for(i=0;i<=a;i++) {
-        x = x | (1 << i);
+        x=x|(1<<i);
     }
     for(i=a+1;i<b;i++){
         x=x^(1<<i);

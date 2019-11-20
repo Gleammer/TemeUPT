@@ -8,7 +8,7 @@
 
 int main(){
     int n,m,i,j;
-    float a[10][20],
+    float a[20][10],
         *p,ar,ge;
 
     p = &a[0][0];
@@ -27,7 +27,7 @@ int main(){
             ar+=*(p+i*20+j);
         }
         ar/=n;
-        printf("Media aritmetica pe linia %d este = %.2f\n", i+1, ar);
+        printf("Media aritmetica a liniei %d este = %.2f\n", i+1, ar);
     }
     for(j=0;j<n;j++){
         ge=1;
@@ -35,7 +35,7 @@ int main(){
             ge*=*(p+i*20+j);
         }
         ge=pow(ge,1/(double)m);
-        printf("Media geometrica pe coloana %d este = %.2f\n", j+1, ge);
+        printf("Media geometrica a coloanei %d este = %.2f\n", j+1, ge);
     }
     return 0;
 }

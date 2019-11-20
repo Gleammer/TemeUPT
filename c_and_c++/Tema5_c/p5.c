@@ -14,6 +14,16 @@ int main(){
     for(i=0;i<m;i++){
         for(j=0;j<m;j++){
             scanf("%d", p+i*20+j);
+        }
+    }
+    for(i=0;i<m;i++){
+        printf("\n");
+        for(j=0;j<m;j++){
+            printf("%d ", *(p+i*20+j));
+        }
+    }
+    for(i=0;i<m;i++){
+        for(j=0;j<m;j++){
             if(i==j){
                 *(p+i*20+j)*=*(p+i*20+j);
             } else if(i<j){

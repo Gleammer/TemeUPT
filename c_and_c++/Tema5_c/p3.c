@@ -14,6 +14,7 @@ int main(){
     scanf("%d", &m);
     printf("n = ");
     scanf("%d", &n);
+    //Citire
     printf("Citim elementele vectorului 1:\n");
     for(i=0;i<n;i++) {
         scanf("%d", v1+i);
@@ -27,15 +28,13 @@ int main(){
             *(p+i*20+j)=*(v1+j) * *(v2+i);
         }
     }
-    printf("----------\n");
+    //Afisare
     for(i=0;i<n;i++){
         printf("%d ", *(v1+i));
     }
-    printf("\n----------");
     for(i=0;i<m;i++){
         printf("\n%d", *(v2+i));
     }
-    printf("\n----------");
     for(i=0;i<m;i++){
         printf("\n");
         for(j=0;j<n;j++){

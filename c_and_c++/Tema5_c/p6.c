@@ -13,7 +13,7 @@ unsigned schimb(unsigned x, int a, int b){
     for(i=a+1;i<b;i++){
         x=x^(1<<i);
     }
-    for(i= sizeof(x)*8-1;i>=b;i--){
+    for(i= sizeof(x)*8-1;i>b;i--){
         x=x&(~(1>>i));
     }
     return x;

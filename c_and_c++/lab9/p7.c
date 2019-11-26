@@ -6,6 +6,10 @@
 #include <stdlib.h>
 #include <math.h>
 
+float get_angle(float x0, float y0, float x1, float y1){
+    return atan((y1-y0)/(x1-x0)) * 180 / M_PI;
+}
+
 int main(){
     float x0,y0,x1,y1;
 
@@ -17,7 +21,6 @@ int main(){
     scanf("%f", &x1);
     printf("y1 = ");
     scanf("%f", &y1);
-    printf("Unghiul format e de %g grade", atan((y1-y0)/(x1-x0)) * 180 / M_PI);
-
+    printf("Unghiul format e de %g grade", get_angle(x0,y0,x1,y1));
     return 0;
 }

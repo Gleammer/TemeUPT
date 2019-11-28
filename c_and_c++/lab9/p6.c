@@ -15,7 +15,7 @@ int cmmdc(int a, int b){
     }
 } //Doar ca e putin optimizat
 // Pentru teste a=1000000 si b=1 necesita prea multa memorie
-// Mai eficient ar fi sa folosim formula lui Euclid
+// Mai eficient ar fi sa folosim algoritmul lui Euclid
 
 int main(){
     int a,b;

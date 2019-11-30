@@ -41,7 +41,7 @@ void patra(int *p,int n){
     int i,j;
 
     for(i=1;i<n-1;i++){
-        for(j=n%2+n/2+abs(n/2-i);j<n;j++){
+        for(j=n/2+n%2;j<n;j++){
             *(p+i*10+j)=2;
         }
     }
@@ -51,7 +51,7 @@ void cincea(int *p,int n){
     int i,j;
 
     for(i=n/2+n%2;i<n;i++){
-        for(j=n-i;j<i-1;j++){
+        for(j=n-i;j<i;j++){
             *(p+i*10+j)=3;
         }
     }
@@ -61,7 +61,7 @@ void sasea(int *p,int n){
     int i,j;
 
     for(i=1;i<n-1;i++){
-        for(j=0;j<n%2+abs(n/2-i);j++){
+        for(j=0;j<n/2;j++){
             *(p+i*10+j)=4;
         }
     }
@@ -69,11 +69,11 @@ void sasea(int *p,int n){
 
 void saptea(int *p,int n){
     prima(p,n);
+    patra(p,n);
+    sasea(p,n);
     doua(p,n);
     treia(p,n);
-    patra(p,n);
     cincea(p,n);
-    sasea(p,n);
 }
 
 void opta(int *p,int n){

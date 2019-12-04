@@ -67,13 +67,13 @@ void run_forrest(int *p, int n){
 }
 
 int main() {
-    FILE *fr;
-    fr = fopen("input.in", "rt");
+    //FILE *fr;
+    //fr = fopen("input.in", "rt");
     int i,j,n,a[10][10],
         *p=&a[0][0];
 
-    //printf("n = ");
-    fscanf(fr,"%d", &n);
+    printf("n = ");
+    scanf("%d", &n);
     run_forrest(p,n);
     return 0;
 }

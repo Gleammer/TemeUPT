@@ -25,16 +25,16 @@ int vecini(int *p, int n){
 }
 
 int main() {
-    FILE *fr;
-    fr = fopen("input.in","rt");
+    //FILE *fr;
+    //fr = fopen("input.in","rt");
     int a[100][100],n,i,j,
         *p=&a[0][0];
 
-    //printf("n = ");
-    fscanf(fr,"%d", &n);
+    printf("n = ");
+    scanf("%d", &n);
     for(i=0;i<n;i++){
         for(j=0;j<n;j++){
-            fscanf(fr, "%d", p+i*100+j);
+            scanf("%d", p+i*100+j);
         }
     }
     printf("Matricea are %d elemente care au ca vecini numai elemente numere pare", vecini(&a[0][0],n));

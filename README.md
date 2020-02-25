@@ -12,10 +12,13 @@ Initial, **initiem** un git repositoriu gol: <br/>
 
 Ulterior, cream o **copie** in mod _remote_ utilizand comanda: <br/>
 > git remote add _orice nickname_ _link catre repositoriu original_ <br/>
+
 Pentru a face un **check** acestui repositoriu: <br/>
 > git remote -v <br/>
+
 Pentru a **incarca**: <br/>
 > git commit -m "Un comentariu ce ar explica schimbarile efectuate" <br/>
+
 > git push _nume branch_ _nickname pe care il utilizati_ <br/>
 
 ### La atentia utilizatorilor: *Acest repozitoriu are caracter informativ*, deci copierea raspunsurilor se face doar din propria initiativa :raised_hands: <br/>

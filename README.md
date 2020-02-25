@@ -21,6 +21,7 @@ Pentru a **incarca**: <br/>
 
 > git push _nume branch_ _nickname pe care il utilizati_ <br/>
 
-### La atentia utilizatorilor: *Acest repozitoriu are caracter informativ*, deci copierea raspunsurilor se face doar din propria initiativa :raised_hands: <br/>
+### La atentia utilizatorilor:
+###### *Acest repozitoriu are caracter informativ*, deci copierea raspunsurilor se face doar din propria initiativa :raised_hands: <br/>
 
 Orice utilizator este binevenit sa contribuie :+1:
